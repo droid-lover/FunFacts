@@ -4,6 +4,9 @@ plugins {
     kotlin("android")
     kotlin("android.extensions")
     kotlin("kapt")
+    id("kotlin-android")
+    id("dagger.hilt.android.plugin")
+    id("androidx.navigation.safeargs")
 }
 apply {
     plugin("kotlin-android")
@@ -16,28 +19,22 @@ android {
     defaultConfig {
         minSdkVersion(Apps.minSdk)
         targetSdkVersion(Apps.targetSdk)
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         getByName("debug") {
             isMinifyEnabled = true
-            buildConfigField(BuildConfigType.boolean, BuildConfigFields.isLogIn, true.toString())
-            buildConfigField(
-                    BuildConfigType.string,
-                    BuildConfigFields.dogApiBase,
-                    BuildConfigValues.dogApiBaseUrl
-            )
+            consumerProguardFiles("education-proguard-rules.pro")
+        }
 
-            buildConfigField(
-                    BuildConfigType.string,
-                    BuildConfigFields.catApiBase,
-                    BuildConfigValues.catApiBaseUrl
-            )
+        getByName("release") {
+            isMinifyEnabled = true
+            consumerProguardFiles("education-proguard-rules.pro")
         }
     }
-
+    buildFeatures {
+        dataBinding = true
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -49,10 +46,11 @@ android {
 
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-
-    // Okhttp
-    api(Libs.okHttp)
-    api(Libs.okHttpLogging)
+    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+    implementation(Libs.kotlin)
+    implementation(Libs.appcompat)
+    implementation(Libs.coreKtx)
+    implementation(Libs.constraintLayout)
 
     // Hilt
     implementation(Libs.hiltCore)
@@ -61,13 +59,9 @@ dependencies {
     kapt(Libs.hiltDaggerAndroidCompiler)
     kapt(Libs.hiltCompiler)
 
-
-    // Retrofit
-    api(Libs.retrofit)
-
-    // Gson
-    implementation(Libs.gson)
-    implementation(Libs.gsonConverter)
+    // Navigation
+    implementation(Libs.navComponentFragment)
+    implementation(Libs.navComponentUi)
 
     // Lifecycle
     implementation(Libs.lifecycleViewModel)
@@ -75,6 +69,10 @@ dependencies {
     implementation(Libs.lifecycleCommon)
     implementation(Libs.lifecycleExtension)
 
+    implementation(Libs.gson)
+    implementation(Libs.lottie)
+
+    implementation(project(Modules.central))
 }
 repositories {
     maven { setUrl("https://dl.bintray.com/kotlin/kotlin-eap") }

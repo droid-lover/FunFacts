@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FunFacts</string>
+    <string name="check_internet">No internet connection\nTry connecting to Wi-Fi or mobile network.</string>
 </resources>
