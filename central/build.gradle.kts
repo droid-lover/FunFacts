@@ -1,11 +1,9 @@
+val kotlin_version: String by extra
 plugins {
     id("com.android.library")
     kotlin("android")
     kotlin("android.extensions")
     kotlin("kapt")
-    id("kotlin-android")
-    id("androidx.navigation.safeargs")
-    id("dagger.hilt.android.plugin")
 }
 apply {
     plugin("kotlin-android")
@@ -18,21 +16,28 @@ android {
     defaultConfig {
         minSdkVersion(Apps.minSdk)
         targetSdkVersion(Apps.targetSdk)
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         getByName("debug") {
+            isMinifyEnabled = true
             buildConfigField(BuildConfigType.boolean, BuildConfigFields.isLogIn, true.toString())
             buildConfigField(
-                    BuildConfigType.string,
-                    BuildConfigFields.apiBaseUrl,
-                    BuildConfigValues.debugApiBaseUrl
+                BuildConfigType.string,
+                BuildConfigFields.dogApiBase,
+                BuildConfigValues.dogApiBaseUrl
+            )
+
+            buildConfigField(
+                BuildConfigType.string,
+                BuildConfigFields.catApiBase,
+                BuildConfigValues.catApiBaseUrl
             )
         }
     }
-    buildFeatures {
-        dataBinding = true
-    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -43,15 +48,11 @@ android {
 }
 
 dependencies {
-    api(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-    implementation(Libs.kotlin)
-    implementation(Libs.appcompat)
-    implementation(Libs.coreKtx)
-    implementation(Libs.recyclerView)
-    implementation(Libs.constraintLayout)
-    // Navigation
-    implementation(Libs.navComponentFragment)
-    implementation(Libs.navComponentUi)
+    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+
+    // Okhttp
+    api(Libs.okHttp)
+    api(Libs.okHttpLogging)
 
     // Hilt
     implementation(Libs.hiltCore)
@@ -59,6 +60,20 @@ dependencies {
     implementation(Libs.hiltViewModelLifecycle)
     kapt(Libs.hiltDaggerAndroidCompiler)
     kapt(Libs.hiltCompiler)
+
+
+    // Retrofit
+    api(Libs.retrofit)
+
+    // Gson
+    implementation(Libs.gson)
+    implementation(Libs.gsonConverter)
+
+    // Lifecycle
+    implementation(Libs.lifecycleViewModel)
+    implementation(Libs.lifecycleLiveDataKtx)
+    implementation(Libs.lifecycleCommon)
+    implementation(Libs.lifecycleExtension)
 
 }
 repositories {
