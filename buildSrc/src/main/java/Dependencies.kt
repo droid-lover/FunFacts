@@ -80,14 +80,25 @@ object Libs {
     const val MDC = "com.google.android.material:material:1.3.0"
 }
 
-object TestLibs {
-    const val junit = "junit:junit:${Versions.junit}"
-    const val junitExtension = "androidx.test.ext:junit:${Versions.junit_extension}"
-    const val espressoCore = "androidx.test.espresso:espresso-core:${Versions.espresso_core}"
-}
-
 object Modules {
     const val central = ":central"
+    const val dogfunfacts = ":dogfunfacts"
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

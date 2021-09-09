@@ -79,8 +79,28 @@ dependencies {
 
     implementation(project(Modules.central))
 
+    //Dog fun facts modules
+    implementation(project(Modules.dogfunfacts))
+
 }
 repositories {
     maven { setUrl("https://dl.bintray.com/kotlin/kotlin-eap") }
     mavenCentral()
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
