@@ -3,6 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/central_navigation"
->
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.sachin.funfacts.ui.MainFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_main" />
 
 </navigation>
