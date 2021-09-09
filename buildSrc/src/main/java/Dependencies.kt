@@ -1,5 +1,5 @@
 object Apps {
-    const val applicationID ="com.vs.ourcricket"
+    const val applicationID ="com.sachin.funfacts"
     const val compileSdk = 30
     const val buildToolsVersion = "30.0.2"
     const val minSdk = 24

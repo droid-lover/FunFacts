@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ourcricket">
+        android:theme="@style/Theme.app">
         <activity android:name="com.sachin.funfacts.ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

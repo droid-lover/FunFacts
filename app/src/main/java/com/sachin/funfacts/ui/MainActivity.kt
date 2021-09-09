@@ -10,10 +10,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //goToLogin()
     }
 
-    private fun goToLogin() {
-        findNavController(R.id.nav_host_fragment).navigate(R.id.loginFragment)
-    }
 }
