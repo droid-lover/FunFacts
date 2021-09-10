@@ -40,7 +40,7 @@ class CatFactsViewModel @ViewModelInject constructor(
     val catFunFactsResponse: LiveData<ResourceState<ArrayList<CatFactsResModel>>> = _catFunFactsResponse
 
 
-    fun getCatFunFacts(number:String) {
+    fun getCatFunFacts(number:Int) {
         if (!CoreUtility.isInternetConnected(context)) {
             noInternet.value = true
         } else {

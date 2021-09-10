@@ -11,6 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.Gson
 import com.sachin.central.datasource.ResourceState
+import com.sachin.central.datasource.pojos.CatFactsResModel
 import com.sachin.central.utils.CoreUtility
 import com.sachin.funfacts.catfunfacts.R
 import dagger.hilt.android.AndroidEntryPoint
@@ -37,7 +38,7 @@ class CatFunFactsFragment : Fragment() {
     }
 
     private fun getDogFunFacts() {
-        viewModel.getCatFunFacts("1")
+        viewModel.getCatFunFacts(5)
     }
 
     private fun setUpObservers() {
@@ -74,7 +75,7 @@ class CatFunFactsFragment : Fragment() {
 
     }
 
-    private fun setUpCatFactsRecyclerView(facts: ArrayList<CatFactsViewModel>) {
+    private fun setUpCatFactsRecyclerView(facts: ArrayList<CatFactsResModel>) {
         catLoaderView.visibility = View.GONE
         rvCatFunFacts.apply {
             visibility = View.VISIBLE
