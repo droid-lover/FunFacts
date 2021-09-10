@@ -31,6 +31,7 @@ object Versions {
     const val gson = "2.8.6"
 
     const val lottie = "3.1.0"
+    const val mdc = "1.3.0"
 
 
 }
@@ -76,7 +77,7 @@ object Libs {
     const val lottie = "com.airbnb.android:lottie:${Versions.lottie}"
 
     //MDC
-    const val MDC = "com.google.android.material:material:1.3.0"
+    const val MDC = "com.google.android.material:material:${Versions.mdc}"
 }
 
 object Modules {
