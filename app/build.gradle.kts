@@ -79,6 +79,9 @@ dependencies {
 
     implementation(project(Modules.central))
 
+    //Cat fun facts modules
+    implementation(project(Modules.catfunfacts))
+
     //Dog fun facts modules
     implementation(project(Modules.dogfunfacts))
 
