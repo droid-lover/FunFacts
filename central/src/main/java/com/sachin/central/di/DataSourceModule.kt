@@ -15,6 +15,10 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Named
 import javax.inject.Singleton
+/**
+ * created by Sachin Rajput
+ * https://droid-lover.medium.com/
+ */
 
 const val CAT_RETROFIT_NAME = "catNetworkInterface"
 const val DOG_RETROFIT_NAME = "dogNetworkInterface"

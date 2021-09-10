@@ -3,12 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/central_navigation"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/dogFunFactsFragment">
 
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.sachin.funfacts.ui.MainFragment"
         android:label="LoginFragment"
         tools:layout="@layout/fragment_main" />
+
+
+    <fragment
+        android:id="@+id/dogFunFactsFragment"
+        android:name="com.sachin.funfacts.dogfunfacts.ui.DogFunFactsFragment"
+        android:label="DogFunFactsFragment"
+        tools:layout="@layout/fragment_dog_fun_facts" />
 
 </navigation>

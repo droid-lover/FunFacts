@@ -5,6 +5,8 @@
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35208333333333336" />
         <entry key="app/src/main/res/layout/fragment_main.xml" value="0.196875" />
+        <entry key="dogfunfacts/src/main/res/layout/fragment_dog_fun_facts.xml" value="0.35208333333333336" />
+        <entry key="dogfunfacts/src/main/res/layout/item_dogs_fact_layout.xml" value="0.35208333333333336" />
         <entry key="login/src/main/res/layout/fragment_login.xml" value="0.35208333333333336" />
       </map>
     </option>

@@ -9,7 +9,10 @@ import android.widget.Toast
 import com.sachin.central.BuildConfig.IS_LOG_ON
 import com.sachin.central.R
 
-
+/**
+ * created by Sachin Rajput
+ * https://droid-lover.medium.com/
+ */
 object CoreUtility {
 
   fun printLog(tag: String, message: String) {

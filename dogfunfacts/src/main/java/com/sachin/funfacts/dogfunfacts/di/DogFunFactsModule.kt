@@ -7,7 +7,10 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ApplicationComponent
 import javax.inject.Singleton
-
+/**
+ * created by Sachin Rajput
+ * https://droid-lover.medium.com/
+ */
 @Module
 @InstallIn(ApplicationComponent::class)
 class DogFunFactsModule {
