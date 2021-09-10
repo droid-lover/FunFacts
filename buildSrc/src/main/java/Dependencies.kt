@@ -83,6 +83,7 @@ object Libs {
 object Modules {
     const val central = ":central"
     const val dogfunfacts = ":dogfunfacts"
+    const val catfunfacts = ":catfunfacts"
 }
 
 

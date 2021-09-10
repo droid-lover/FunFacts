@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/central_navigation"
+    app:startDestination="@id/catFunFactsFragment">
+
+
+    <fragment
+        android:id="@+id/dogFunFactsFragment"
+        android:name="com.sachin.funfacts.dogfunfacts.ui.DogFunFactsFragment"
+        tools:layout="@layout/fragment_dog_fun_facts"
+        android:label="DogFunFactsFragment" />
+
+
+    <fragment
+        android:id="@+id/catFunFactsFragment"
+        android:name="com.sachin.funfacts.catfunfacts.ui.CatFunFactsFragment"
+        tools:layout="@layout/fragment_cat_fun_facts"
+        android:label="CatFunFactsFragment" />
+</navigation>

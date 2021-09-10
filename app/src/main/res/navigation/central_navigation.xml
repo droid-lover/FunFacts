@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/central_navigation"
-    app:startDestination="@id/dogFunFactsFragment">
+    app:startDestination="@id/mainFragment">
 
     <fragment
         android:id="@+id/mainFragment"
@@ -11,11 +11,7 @@
         android:label="LoginFragment"
         tools:layout="@layout/fragment_main" />
 
+    <include app:graph="@navigation/nav_graph_funfacts" />
 
-    <fragment
-        android:id="@+id/dogFunFactsFragment"
-        android:name="com.sachin.funfacts.dogfunfacts.ui.DogFunFactsFragment"
-        android:label="DogFunFactsFragment"
-        tools:layout="@layout/fragment_dog_fun_facts" />
 
 </navigation>
