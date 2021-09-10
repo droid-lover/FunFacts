@@ -1,8 +1,11 @@
 package com.sachin.central.di
 
 import android.content.Context
+import com.sachin.central.datasource.CatFactsDataSource
+import com.sachin.central.datasource.CatFunFactsDataSourceImpl
 import com.sachin.central.datasource.DogFactsDataSource
 import com.sachin.central.datasource.DogFunFcatsDataSourceImpl
+import com.sachin.central.datasource.apis.CatFactsService
 import com.sachin.central.datasource.apis.DogFactsService
 import dagger.Module
 import dagger.Provides
@@ -28,7 +31,7 @@ const val DOG_RETROFIT_NAME = "dogNetworkInterface"
 class DataSourceModule {
 
   val dogApiBaseUrl = "https://dog-facts-api.herokuapp.com"
-  val catApiBaseUrl = "\"https://www.DEV_URL.com/\""
+  val catApiBaseUrl = "https://cat-fact.herokuapp.com"
 
 
   @Singleton
@@ -77,6 +80,19 @@ class DataSourceModule {
   fun providesDogFactsDataSource(
     dogFactsService: DogFactsService
   ): DogFactsDataSource = DogFunFcatsDataSourceImpl(dogFactsService)
+
+
+  @Singleton
+  @Provides
+  fun provideCatsFactsService(@Named(CAT_RETROFIT_NAME) retrofit: Retrofit): CatFactsService {
+    return retrofit.create(CatFactsService::class.java)
+  }
+
+  @Singleton
+  @Provides
+  fun providesCatsFactsDataSource(
+    catFactsService: CatFactsService
+  ): CatFactsDataSource = CatFunFactsDataSourceImpl(catFactsService)
 
 
 
