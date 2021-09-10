@@ -18,7 +18,7 @@ class CatFactsRepository(
     private val catFactsDataSource: CatFactsDataSource
 ) {
 
-    fun getCatFunFacts(number: String): Flow<ResourceState<ArrayList<CatFactsResModel>>> {
+    fun getCatFunFacts(number: Int): Flow<ResourceState<ArrayList<CatFactsResModel>>> {
         return object : NetworkBoundSource<ArrayList<CatFactsResModel>, ArrayList<CatFactsResModel>>() {
 
             override suspend fun fetchFromRemote(): Response<ArrayList<CatFactsResModel>> {
