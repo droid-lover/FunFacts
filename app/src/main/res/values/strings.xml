@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">FunFacts</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello Main blank fragment</string>
+    <string name="cat_lovers">Cat Lovers</string>
+    <string name="dog_lovers">Dog Lovers</string>
 
 </resources>
