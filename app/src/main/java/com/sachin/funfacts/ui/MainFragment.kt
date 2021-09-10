@@ -6,6 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.sachin.funfacts.R
+/**
+ * created by Sachin Rajput
+ * https://droid-lover.medium.com/
+ */
+
+
 
 class MainFragment : Fragment() {
 

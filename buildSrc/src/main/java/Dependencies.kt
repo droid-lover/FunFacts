@@ -1,3 +1,8 @@
+/**
+ * created by Sachin Rajput
+ * https://droid-lover.medium.com/
+ */
+
 object Apps {
     const val applicationID ="com.sachin.funfacts"
     const val compileSdk = 30
@@ -15,7 +20,6 @@ object Versions {
     const val coreKtx = "1.3.2"
     const val designSupport = "1.2.1"
     const val constraintLayout = "2.0.2"
-    const val securityCrypto = "1.0.0-rc04"
     const val lifecycle = "2.2.0"
     const val recyclerView = "1.1.0"
     const val cardView = "1.0.0"
@@ -24,16 +28,11 @@ object Versions {
     const val hiltSnapShot = "1.0.0-alpha01"
     const val okHttp = "4.8.1"
     const val retrofit = "2.9.0"
-    const val moshi = "1.9.2"
     const val gson = "2.8.6"
-    const val room = "2.2.5"
 
     const val lottie = "3.1.0"
 
-    // Test
-    const val junit = "4.12"
-    const val junit_extension = "1.1.2"
-    const val espresso_core = "3.3.0"
+
 }
 
 object Libs {

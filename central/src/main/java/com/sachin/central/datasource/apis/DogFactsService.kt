@@ -7,7 +7,10 @@ import retrofit2.http.GET
 import retrofit2.http.POST
 import retrofit2.http.Path
 import retrofit2.http.Query
-
+/**
+ * created by Sachin Rajput
+ * https://droid-lover.medium.com/
+ */
 interface DogFactsService {
 
     @GET("api/v1/resources/dogs")
