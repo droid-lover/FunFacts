@@ -4,6 +4,16 @@ FunFacts is an example of Modular architecture
 
 ![Alt Text](https://github.com/droid-lover/FunFacts/blob/master/images/FunFactsAppbySachin.jpg)
 
+## This Project is built using Kotlin,we will use in this App :
+* Modular architecture
+* Dependency Injections HILT,
+* MVVM, 
+* Coroutines, 
+* Lottie, 
+* Jetpack components central navigation 
+* and buildSrc for central dependencies management.
+
+### <a href="https://medium.com/native-mobile-bits/modular-android-app-architecture-build-to-scale-d6f402cbd93a/">Full explaination Article here</a>
 
 
 ## About the author
