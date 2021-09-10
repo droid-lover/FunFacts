@@ -26,4 +26,4 @@ FunFacts is an example of Modular architecture
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/sachin-rajput-998b48105/)
 [![Website Badge](https://img.shields.io/badge/Medium-3b5998?style=flat-square&logo=google-chrome&logoColor=white)](https://droid-lover.medium.com/)
 [![Stackoverflow Badge](https://img.shields.io/badge/-Stackoverflow-FFA500?style=flat-square&logo=Stackoverflow&logoColor=orange)](https://stackoverflow.com/users/7193506/sachin)
-![Twitter Badge](https://img.shields.io/twitter/follow/droid_lover_?style=social)
+[![Twitter Badge](https://img.shields.io/twitter/follow/droid_lover_?style=social)](https://twitter.com/droid_lover_)
