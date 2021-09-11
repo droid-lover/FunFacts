@@ -20,7 +20,8 @@ FunFacts is an example of Modular architecture
 ### <a href="https://iamsachinrajput.medium.com/"> Sachin Rajput</a>
   Android Developer with 5 years of experiecne in building useful apps which serves a purpose to help people. <br/>
   In :heart: with <img src="https://github.com/myJarvis/EasyAnalytics/blob/master/images/android.png" alt="Android" width=20  height=30> </br> Open source contributor.
-  
+   
+   
   Lets be friends over here :) 
   
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/sachin-rajput-998b48105/)
