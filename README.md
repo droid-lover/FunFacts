@@ -2,7 +2,7 @@
 FunFacts is an example of Modular architecture
 
 
-![Alt Text](https://github.com/droid-lover/FunFacts/blob/master/images/FunFactsAppbySachin.jpg)
+![Alt Text](https://github.com/droid-lover/FunFacts/blob/master/images/FunFactsAppbySachin.jpg) 
 
 ## This Project is built using Kotlin,we will use in this App :
 * Modular architecture
