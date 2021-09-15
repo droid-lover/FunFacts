@@ -16,7 +16,7 @@ FunFacts is an example of Modular architecture
 ### <a href="https://medium.com/native-mobile-bits/modular-android-app-architecture-build-to-scale-d6f402cbd93a/">Full explaination Article here</a>
 
 
-## About the author
+## About the author 
 ### <a href="https://iamsachinrajput.medium.com/"> Sachin Rajput</a>
   Android Developer with 5 years of experiecne in building useful apps which serves a purpose to help people. <br/>
   In :heart: with <img src="https://github.com/myJarvis/EasyAnalytics/blob/master/images/android.png" alt="Android" width=20  height=30> </br> Open source contributor.
