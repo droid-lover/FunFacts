@@ -9,7 +9,7 @@ FunFacts is an example of Modular architecture
 * Dependency Injections HILT,
 * MVVM, 
 * Coroutines, 
-* Lottie, 
+* Lottie animations, 
 * Jetpack components central navigation 
 * and buildSrc for central dependencies management.
 
